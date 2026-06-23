@@ -39,7 +39,7 @@ if __name__ == "__main__":
         "--deck-filename",
         required=True,
         action="store",
-        help="Fielname to use for Anki deck (without extension)",
+        help="Filename to use for Anki deck (without extension)",
     )
     args = parser.parse_args()
 

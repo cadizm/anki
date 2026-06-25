@@ -52,7 +52,7 @@ def make_media_model():
 
 def make_note(model, row, audio_filename):
     question = row["translation"]
-    answer = f"{row['hiragana']} ({row['romaji']})"
+    answer = f"{row['hiragana']}"
     return genanki.Note(
         model=model,
         fields=[

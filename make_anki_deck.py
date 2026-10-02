@@ -53,6 +53,9 @@ def make_media_model():
 def make_note(model, row, audio_filename):
     question = row["translation"]
     answer = f"{row['hiragana']}"
+    kanji = row["kanji"]
+    if kanji:
+        answer = f"{row['hiragana']} ({kanji})"
     return genanki.Note(
         model=model,
         fields=[
